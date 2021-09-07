@@ -1,9 +1,11 @@
-function showdata(data){
-    console.log(data[0])
+function showdata(data) {
     for (var i = 0; i < data.length; i++) {
-        console.log(data[i].date)
-        console.log(data[i].title)
-        $("#showdatas").append(`<apod>Title: ${data[i].title}<br>Date: ${data[i].date}<br><img src="${data[i].url}" width="240px" /></apod><hr>`)
+        $("#showdatas").append(`<apod>
+                Title: ${data[i].title}<br>
+                Date: ${data[i].date}<br>
+                <img src="${data[i].url}" width="240px" />
+                </apod>
+            <hr>`)
     }
 }
 
@@ -13,7 +15,7 @@ async function fetchinformation() {
         let data = await apiresponse.json()
         showdata(data);
     } else {
-        console.log("API ERROR : " + apiresponse.statusText)
+        console.log("API ERROR: " + apiresponse.statusText)
     }
 }
 fetchinformation()
