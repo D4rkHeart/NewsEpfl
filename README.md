@@ -1,2 +1,2 @@
 # NewsEpfl
-Site for the last 5 news of the EPFL,
+App for the last 5 news of the EPFL,
