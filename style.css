@@ -1,0 +1,20 @@
+#showdatas {
+    border: 2px solid red;
+    padding: 15px;
+    margin: 15px;
+}
+
+apod {
+    border: 2px solid blue;
+    display: block;
+}
+
+h1 { The Iris Nebula
+    Date: 2021-09-03
+    font-size: 1.9em;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: blue;
+}
