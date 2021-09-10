@@ -2,10 +2,13 @@ function showdata(data) {
     for (var i = 0; i < data.length; i++) {
         $("#showdatas").append(`<apod>
                     <h1>Title: ${data[i].title}</h1>
-                    <h2>Date: ${data[i].date}<h2>
-                    <a href="${data[i].hdurl}">
-                        <img src="${data[i].url}" width="240px">
-                    </a>
+                    <h2>Date: ${data[i].date}</h2>
+                    <div class="container">
+                        <a href="${data[i].hdurl}">
+                            <img src="${data[i].url}" class="picstyle" width="600x400px"</img>
+                        </a>
+                        <h3>Description : ${data[i].explanation}</h3>
+                    </div>
                 </apod>
             <hr>`)
     }

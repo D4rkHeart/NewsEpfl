@@ -5,16 +5,31 @@
 }
 
 apod {
-    border: 2px solid blue;
+    border: 10px solid rgb(223, 120, 37);
     display: block;
 }
 
-h1 { The Iris Nebula
-    Date: 2021-09-03
+
+/*TEXTstyle=*/
+h1 {
     font-size: 1.9em;
 }
 
 h2 {
     font-size: 1.2em;
-    color: blue;
+    color: rgb(192, 28, 6);
 }
+
+h3 {
+    font-size: 0.9em;
+    color: rgba(139, 23, 12, 0.87);
+    width: 450px;
+    margin-left: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
